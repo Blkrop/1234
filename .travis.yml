@@ -1,4 +1,12 @@
 language: node_js
 node_js:
   - "7"
+script:
+  - npm install -g grunt-cli
 
+deploy:  
+  provider: heroku  
+   app: 
+  api_key:  
+    secure:
+  skip_cleanup: true
